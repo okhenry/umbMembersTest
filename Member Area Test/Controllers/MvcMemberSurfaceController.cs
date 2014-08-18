@@ -55,6 +55,13 @@ namespace Umbraco714.Controllers
         {
             return PartialView("MvcMemberRegister", new MvcMemberRegisterModel());
         }
+        
+        [ChildActionOnly]
+        [ActionName("MvcMemberValidateRenderForm")]
+        public ActionResult MvcMemberValidateRenderForm()
+        {
+            return PartialView("MvcMemberValidate", new MvcMemberValidateModel());
+        }
 
         [HttpGet]
         [ActionName("MvcMemberValidate")]
@@ -178,7 +185,7 @@ namespace Umbraco714.Controllers
             // or just show a success message and ask them to check their email?
             // TempData["Success"] = true;
             // TempData["Status"] = "Registration pending email validation - please check your email to complete the registration process.";
-            // return RedirectToCurrentUmbracoPage();
+            // return RedirectToCurrentUmbracoPage(;)
             // OR?
             // return Redirect("/members");
 

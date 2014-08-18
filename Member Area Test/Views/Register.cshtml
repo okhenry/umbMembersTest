@@ -1,1 +1,7 @@
-﻿
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+<div class="body">
+    @Html.Action("MvcMemberRegisterRenderForm", "MvcMemberSurface")
+</div>

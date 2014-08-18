@@ -2791,13 +2791,15 @@
     <Content Include="Views\Text.cshtml" />
     <Content Include="Views\Login.cshtml" />
     <Content Include="Views\Register.cshtml" />
+    <Content Include="Views\Validate.cshtml" />
+    <Content Include="Views\MacroPartials\navigation.cshtml" />
+    <Content Include="Views\Master.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
